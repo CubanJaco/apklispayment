@@ -43,10 +43,6 @@ class Verify {
 
             val decryptedUsername = userNameSecured?.let { decryptRSA(it) } ?: ""
 
-            Log.d(
-                "LOL",
-                "User $userName ${if (paid && decryptedUsername == userName) "paid" else "does not paid"}"
-            )
             return Pair(paid && decryptedUsername == userName, userName)
         }
     }

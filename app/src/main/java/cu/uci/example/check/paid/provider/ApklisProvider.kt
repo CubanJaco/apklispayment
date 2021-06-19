@@ -27,8 +27,6 @@ class ApklisProvider : ContentProvider() {
     ): Cursor {
 
         val username = randomString(15, Util.USERNAME_VALID_CHARS)
-        Log.d("LOL", "provider wit username $username")
-
         val columns = arrayOf(APKLIS_PAID, APKLIS_USER_NAME, APKLIS_USER_NAME_SECURITY)
         val matrixCursor = MatrixCursor(columns)
         matrixCursor.addRow(arrayOf(1, username, encryptRSA(username)))
