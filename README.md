@@ -4,6 +4,9 @@ La idea es agregar una columna extra al `ContentProvider` de la aplicación de `
   
 En resumen el mecanismo funciona similar a una firma digital.
 
+La inviolabilidad del mismo depende de cuan bien resguardad se encuentre la clave privada que utilizará el `ContentProvider`
+
+
 
 # Check app paid in [Apklis](https://www.apklis.cu/es/) APK
 [![](https://jitpack.io/v/Z17-CU/apklischeckpayment.svg)](https://jitpack.io/#Z17-CU/apklischeckpayment)
