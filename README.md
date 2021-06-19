@@ -1,3 +1,10 @@
+# Seguridad
+
+La idea es agregar una columna extra al `ContentProvider` de la aplicación de `ApkLis` que funcionaría similar a un `MD5` pero con un método de encriptación asimétrica `RSA` donde la clave privada se usaría solamente en el `ContentProvider` mientras la clave pública se utiliza en la librería `apklischeckpayment` para verificar que el `ContentProvider` que brinda la informacón es legítimo. De esta forma se disminuye la posibilidad de suplantación de identidad con el `ContentProvider`
+  
+En resumen el mecanismo funciona similar a una firma digital.
+
+
 # Check app paid in [Apklis](https://www.apklis.cu/es/) APK
 [![](https://jitpack.io/v/Z17-CU/apklischeckpayment.svg)](https://jitpack.io/#Z17-CU/apklischeckpayment)
 
